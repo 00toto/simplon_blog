@@ -1,0 +1,159 @@
+
+<div class="container">
+ <section id="projetaudio">
+   <div class="container">
+     <center>
+        <h1>Projet Audio</h1>
+        <h3>SUBTITLE...</h3>
+     </center>
+   </div>
+ </section>
+ 
+ <section class="container" id="bio">  
+    <header><center>Mon parcours :</center>
+    </header>
+    <article id="webac">
+        <header>
+            -> 2013
+            Web@cademie
+        </header>
+        <p>
+            Le programme de formation Web@cademie est destiné à former sur 2 ans les apprenants aux métiers du développement web.
+        </p>
+    </article>
+    
+    <article id="simplon">
+        <header>
+            -> 2015
+            Simplonline
+        </header>
+        <p>
+            Simplon.co est un réseau de fabriques sociales du numérique qui propose des formations intensives pour apprendre à créer des sites web et des applications mobile, et en faire son métier.
+        </p>
+    </article>
+    
+    <article id="opclass">
+        <header>
+            -> 2016
+            openclassroom
+        </header>
+        <p>
+            Des cours 100% en ligne accessibles à tous.
+        </p>
+    </article> 
+    
+    <article id="afteridk">
+        <header>
+            _?
+        </header>
+        <p>
+            i dont know
+        </p>
+    </article> 
+ </section>
+ 
+ <section id="photos">
+     <header><center>  
+         Photos
+     </center></header>
+     <center><div id="antitrust" class="container">
+         
+     </center>
+ </section>
+ 
+ <section id="music">
+    <header>
+        <center>Un mix simpas</center>
+    </header>
+     <div class="container" id="music">
+         <center><object type="text/html" data="https://www.youtube.com/embed/2b1L3pxshn8" style="width:640px;height:385px;"></object></center>
+     </div>
+ </section>
+ 
+ <section id="video">
+   <div class="row">
+        <header>
+            <h1>VIDEO</h1>
+            <h8>ALL VIDEO</h8>
+        </header>
+        
+        <div class="col-md-4" id="containerimg1">
+            <div id="img1">
+            </div>
+            
+            <div id="fig1">Like A Rose - Ashley Monroe
+            </div>
+        </div>
+        
+        <div class="col-md-4" id="containerimg2">
+             <div id="img2">
+            </div>
+            
+             <div id="fig2">Big Love - Carrie Rodriguez
+            </div>
+            
+        </div>
+        <div class="col-md-4" id="containerimg3">
+             <div id="img3">
+            </div>
+            
+            <div id="fig3">Waiting On June - Holly Williams
+            </div>
+            
+        </div>
+   </div>
+ </section>
+ <section id="tour">
+   <div class="containerTour">
+        <header>
+            <p>UPCOMING GIGS</p>
+        </header>
+        <div class="col-md-16">
+            <% @Gigs.each do |gig| %>
+                <div class="contgigs">
+                <div id="gigs" class="col-md-7"><%= gig.monts %>
+                <span id="dateSpace"><%= gig.days %></span><%= gig.ville %> 
+                <%= gig.departement %></div>
+                <div class="col-md-4"><%= gig.place %></div><br></div>
+            <% end %>
+            <div id="bottomgigs" class="container">
+                <center><p><%= link_to "VIEW ALL GIGS", '/gigs',  class: "article"%></p></center>
+            </div>
+        </div>
+   </div>
+ </section>
+ 
+ <secton id="blog">   
+     <div id="row1">
+        <article class="col-md-4" id="about">
+            <header >
+                ABOUT OBSIDIAN
+            </header>
+            <p>
+              The Obsidian theme, like the naturally occurring volcanic glass of the same name, possesses an inherent allure that's stylish in appearance and practical in purpose. With distinctive background options and various customization possibilities, Obsidian makes it easy to create the ultimate hub for your online identity.  
+            </p>
+        </article>
+        
+        <article class="col-md-4" id="vivi">
+            <header >
+                <span id="itaspan">VIVIENNE'S OMITTED LINE</span>
+            </header>
+            <div id="imgAlbum">
+            </div>
+        </article>
+        
+        <article class="col-md-4" id="recentsPosts">
+            <header>
+                RECENT POSTS
+            </header>
+            <% @posts.each do |post| %>
+            <div class="postslists">
+                <%= link_to post.title, post %> <br>
+                <%= post.created_at.strftime("%d %b. %Y") %>
+            </div>
+            <% end %>
+        </article>
+   </div>
+ </secton>
+ 
+ 

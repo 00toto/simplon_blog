@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workspace</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+    
+<% if flash[:notice] %>
+    <p class="notice">
+        <%= flash[:notice] %>
+    </p>
+<% end %>
+
+<% if flash[:alert] %>
+    <p class="alert">
+        <%= flash[:alert] %>
+    </p>
+<% end %>
+  <header>
+   <div class="container">
+      <center>
+         <%= render 'shared/navbar' %>
+        </center>
+      </div>
+    </div>
+ </header>
+
+ <div class="container">
+    <%= yield %>
+ </div>
+ 
+ <hr>
+ <div class="container">
+    <footer id="footer">
+        <%= render 'shared/footer' %>
+    </footer>     
+ </div>
+
+
+</body>
+</html>

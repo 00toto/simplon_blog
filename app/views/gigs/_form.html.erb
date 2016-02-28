@@ -1,0 +1,34 @@
+<%= form_for(@gig) do |f| %>
+  <% if @gig.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gig.errors.count, "error") %> prohibited this gig from being saved:</h2>
+
+      <ul>
+      <% @gig.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ville %><br>
+    <%= f.text_field :ville, class: "form-control" %>
+  </div>
+  <div class="field">
+    <%= f.label :departement %><br>
+    <%= f.text_field :departement, class: "form-control" %>
+  </div>
+  <div class="field">
+    <%= f.label :place %><br>
+    <%= f.text_field :place, class: "form-control" %>
+  </div>
+
+  
+  <br>
+
+  
+  <div class="actions">
+    <%= f.submit :Confirmer, class: "btn btn-primary" %>
+  </div>
+<% end %>

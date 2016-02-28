@@ -1,0 +1,38 @@
+<% if current_user %>
+  <div id="navUser">
+    <p>
+      Bonjour <%= current_user.email %>
+    </p>
+    <%= link_to "Deconexion", destroy_user_session_path, :method => :delete %>
+    </div>
+<% end %>
+
+
+    <div class="container">
+      <nav>
+        <ul>
+          <li><%= link_to "HOME", '/', class: "article" %></li>
+          <li><%= link_to "BIO", '#bio', class: "article" %></li>
+          <li><%= link_to "PHOTOS", '#photos', class: "article" %></li>
+          <li><%= link_to "MUSIC", '#music', class: "article" %></li>
+          <li><%= link_to "VIDEO", '#video', class: "article" %></li>
+          <li><%= link_to "NEWS", '/posts#index', class: "article" %></li>
+          <li><%= link_to "TOUR", '#gigs',  class: "article"%></li>
+          <li><%= link_to "CONTACT", '#contact', class: "article" %></li>
+        </ul>
+      </nav>
+    </div>
+    
+<% if current_page?(root_url) %>
+<% if !current_user.email? %>
+<div class="container"> 
+    <nav>
+      <ul>
+       <li><%= link_to "HOME", '/', class: "article" %></li>
+        <li><%= link_to "NEWS", 'posts#index', class: "article" %></li>
+        <li><%= link_to "TOUR", 'gigs#index',  class: "article"%></li>
+        <li><%= link_to "CONTACT", 'contact#index', class: "article" %></li>
+      </ul>
+    </nav>
+  </div>
+<% end %><% end %>

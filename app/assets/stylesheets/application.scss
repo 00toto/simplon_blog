@@ -1,0 +1,382 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	font-size: 100%;
+	font-family: 'Open Sans', sans-serif;
+	vertical-align: baseline;
+//color: #FFFFFF;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+p {
+	 color: #FFFFFF;
+}
+
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+	background-image: url(background.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment : fixed;
+    font-weight: Bold;
+    color: #FFFFFF !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav {
+    
+  }
+}
+
+nav {
+	font-weight:lighter;
+	font-size: smaller;
+	margin-top:0.5%;
+	margin-bottom:2%;
+	color:#ffffff;
+	text-decoration:none;
+	margin-top: 4%;
+}
+nav ul {
+    list-style-type : none;
+}
+
+nav li {
+	margin-left:2%;
+	margin-right:2%;
+    display : inline-block;
+    text-decoration:none; 
+}
+
+nav li a {
+	font-size: 1.7em;
+    text-decoration:none; 
+    color: #adadad;
+
+  &:hover {
+    color: #FFFFFF;
+    text-decoration:none;
+  }
+}
+
+#bio header{
+	font-size: 20px;
+	color:#FFFFFF;
+	margin-bottom: 10%;
+}
+
+#webac header {
+	margin-bottom: 2%;
+	border-bottom:0.4px solid #ababab;
+}
+
+#simplon header {
+	margin-bottom: 2%;	
+	border-bottom:0.4px solid #ababab ;
+}
+
+#opclass header {
+	margin-bottom: 2%;	
+	border-bottom:0.4px solid #ababab ;
+}
+
+#afteridk header {
+	margin-bottom: 2%;	
+	border-bottom:0.4px solid #ababab ;
+}
+
+#photos header{
+	font-style:bold;
+	font-size: 20px;
+	color:#FFFFFF;
+	margin-bottom: 10%;
+	margin-top: 10%;
+	border-bottom: 0.5px solid #FFFFFF;
+}
+
+#photos {
+	margin-bottom: 15%;
+}
+
+#antitrust {
+	overflow:hidden;
+    -webkit-border-radius:100px;
+    -moz-border-radius:100px;
+    border-radius:1000px;
+	background-image: url(annonymous.jpg);
+	background-repeat:no-repeat;
+	height:360px;
+	width:540px;
+}
+
+
+#music header {
+	padding-bottom: 3%;
+	border-bottom: 0.5px solid #FFFFFF;
+	font-size: 20px;
+	font-style:italic;
+	color:#FFFFFF;
+	margin-bottom: 10%;
+	margin-top: 5%;
+	text-decoration: underline;
+}
+
+#music {
+	margin-bottom: 20%;
+}
+
+
+#projetaudio .container {
+	font-weight:lighter;
+	margin-top:15%;
+	margin-bottom:40%;
+	color:#ababab;
+}
+
+#projetaudio .container h1 {
+	font-weight: 300;
+	letter-spacing: 0.090em;
+	font-size: 4.25em;
+	text-transform: uppercase;
+	margin-bottom:2%;
+	color:#FFFFFF;
+}
+
+
+h3 {
+	color:#ffffff;
+	opacity:0.7;
+}
+
+#video {
+	margin-bottom: 15%;
+}
+
+#video .container header{
+	margin-left: 11%;
+}
+
+#video .row h1 {
+	display: inline-block;
+	margin-right:86%;
+	font-weight: bold;
+	font-size: 1.8em;
+}
+
+#video .row h8 {
+	display: inline-block;
+	font-weight: normal;
+	font-size: 1em;
+	opacity: 0.8;
+	vertical-align: top;
+	color:#FFFFFF;
+}
+
+#img1 {
+
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	background-image: url(video1.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	height: 200px;
+	width:100%;
+}
+#img2 {
+	
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	background-image: url(video2.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	height: 200px;
+	width:100%;
+	padding: 20px;
+}
+#img3 {
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	background-image: url(video3.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	height: 200px;
+	width:100%;
+}
+
+.row header {
+	border-bottom:0.3px solid #FFFFFF;
+}
+.row {
+	border-bottom: 0.5px solid #FFFFFF;
+	color:#ffffff;
+	font-weight: Bold;
+}
+#containerimg1,#containerimg2,#containerimg3 {
+	padding-top: 25px;
+}
+
+#containerimg2 {
+	border-left: 0.5px solid #FFFFFF;
+	border-right: 0.5px solid #FFFFFF;
+}
+
+#itaspan {
+	font-style: italic;
+}
+
+
+#blog #row1{
+	display: block;
+	color: #FFFFFF;
+	margin-top: 3%;
+	padding-top: 3%;
+	border-top: 0.5px solid #FFFFFF;
+}
+
+#about header{
+	font-size: 15px;
+	margin-bottom: 30px;
+}
+
+#vivi header {
+	font-size: 15px;
+	margin-bottom: 30px;
+}
+
+#recentsPosts header {
+	font-size: 15px;
+	margin-bottom: 30px;
+}
+
+.postslists a {
+	color: inherit;
+}
+
+
+#about p {
+	color: #FFFFFF;
+	clear: both;
+	font-size: 16px;
+	line-height:30px;
+}
+
+
+#imgAlbum {
+	clear: both;
+	background-image: url(album.jpg);
+	background-repeat:no-repeat;
+	width:100%;
+	height: 300px;
+}
+
+a {
+	text-decoration: none;
+    color: #adadad;
+}
+
+.postslists {
+	text-decoration:none;
+	clear: both;
+	width: 100%;
+	height: 60px;
+	border-top: 0.3px solid #FFFFFF;
+}
+
+#footer i {
+	margin: 50px 20px 50px 20px;
+	display: inline-block ;
+
+}
+ #i {
+   margin: 50px 20px 60px 20px;
+   display: inline-block;
+   position: relative;
+   bottom:5px;
+ }
+#footer{
+	margin-top: 0.5px solid #FFFFFF;
+	display: inline-block;
+	color: #FFFFFF;
+}
+
+#tour {
+	margin-bottom: 15%;	
+}
+
+.containerTour header{
+	font-weight:bold;
+	border-bottom: 0.5px solid #FFFFFF;
+	margin-top: 5%;	
+	font-size: 2em;
+	color: #adadad;
+}
+
+
+.contgigs {
+	margin-top: 2%;
+	margin-bottom: 2%;
+    border-bottom: 0.5px solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 1.3em;
+}
+
+#dateSpace {
+	margin-right: 5%;
+}
+
+#bottomgigs {
+	font-weight:lighter;
+	margin-top: 2%;
+}
+#bottomgigs p a{
+	text-decoration:none;
+}
+#audiotheme p {
+	font-weight:lighter;
+	margin-bottom: 5%;
+	margin-top: 3%;
+}
+textarea {
+    color:black !important;
+}
+#navUser {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require devise_bootstrap_views
+ */

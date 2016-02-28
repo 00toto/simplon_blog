@@ -1,0 +1,18 @@
+<h1>Listes des Posts</h1>
+
+<% @posts.each do |post| %>
+  <h2><%= link_to post.title, post %></h2>
+  
+  <p>
+    il y a <%= time_ago_in_words post.created_at %> 
+  </p>
+  <p>
+    <%= truncate post.text %>
+  </p>
+  
+<% end %>
+<% if current_user.role == "admin"  %>
+  <p>
+    <%= link_to "NOUVEAU POSTS", new_admin_post_path %>
+  </p>
+<% end %>

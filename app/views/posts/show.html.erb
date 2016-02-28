@@ -1,0 +1,27 @@
+<h1><%= @post.title %></h1>
+
+<%= @post.text %>
+
+<h2>Commentaires</h2>
+
+<% @post.coments.each do |coment| %>
+  <p><%= coment.text %></p>
+  <p>il y a <%= time_ago_in_words coment.created_at %></p>
+<% end %>
+
+<%= form_for [@post , @post.coments.build] do |w| %>
+  <p><%= w.text_area :text, :size => '40x10' %></p>
+  <p><%= w.submit "Envoyer le comentaire" %></p>
+<% end %>
+
+<p>
+<%= link_to 'Retour', posts_path %>
+|
+<% if current_user.role == "admin"  %>
+  <div>
+    <center>
+      <%= link_to 'Gerer les posts', admin_posts_path, class: "btn btn-primary" %>
+    </center>
+  </div>
+  </p>
+<% end %>
